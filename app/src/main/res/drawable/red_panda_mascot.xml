@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+
+    <!-- Red Panda Body -->
+    <path
+        android:fillColor="@color/kalma_primary"
+        android:pathData="M40,60 C35,65 30,65 25,60 C20,55 20,50 25,45 C30,40 35,40 40,45 C45,40 50,40 55,45 C60,50 60,55 55,60 C50,65 45,65 40,60 Z" />
+
+    <!-- Red Panda Head -->
+    <path
+        android:fillColor="@color/kalma_primary"
+        android:pathData="M40,30 C35,25 30,25 25,30 C20,35 20,40 25,45 C30,50 35,50 40,45 C45,50 50,50 55,45 C60,40 60,35 55,30 C50,25 45,25 40,30 Z" />
+
+    <!-- White Face Markings -->
+    <path
+        android:fillColor="@color/kalma_background_light"
+        android:pathData="M30,35 C30,30 35,30 40,35 C45,30 50,30 50,35 C50,40 45,40 40,35 C35,40 30,40 30,35 Z" />
+
+    <!-- Ears -->
+    <path
+        android:fillColor="@color/kalma_primary_dark"
+        android:pathData="M25,25 C20,20 15,20 15,25 C15,30 20,30 25,25 Z" />
+    <path
+        android:fillColor="@color/kalma_primary_dark"
+        android:pathData="M55,25 C60,20 65,20 65,25 C65,30 60,30 55,25 Z" />
+
+    <!-- Inner Ears -->
+    <path
+        android:fillColor="@color/kalma_background_light"
+        android:pathData="M20,25 C18,23 16,23 16,25 C16,27 18,27 20,25 Z" />
+    <path
+        android:fillColor="@color/kalma_background_light"
+        android:pathData="M60,25 C62,23 64,23 64,25 C64,27 62,27 60,25 Z" />
+
+    <!-- Eyes -->
+    <path
+        android:fillColor="@color/kalma_text_primary"
+        android:pathData="M32,35 C30,33 28,33 28,35 C28,37 30,37 32,35 Z" />
+    <path
+        android:fillColor="@color/kalma_text_primary"
+        android:pathData="M48,35 C50,33 52,33 52,35 C52,37 50,37 48,35 Z" />
+
+    <!-- Nose -->
+    <path
+        android:fillColor="@color/kalma_text_primary"
+        android:pathData="M40,40 C38,38 36,38 36,40 C36,42 38,42 40,40 Z" />
+
+    <!-- Mouth -->
+    <path
+        android:fillColor="@color/kalma_text_primary"
+        android:pathData="M40,42 C38,44 36,44 36,42 C36,40 38,40 40,42 Z" />
+
+    <!-- Whiskers -->
+    <path
+        android:fillColor="@color/kalma_text_primary"
+        android:strokeWidth="1"
+        android:pathData="M30,38 L25,38" />
+    <path
+        android:fillColor="@color/kalma_text_primary"
+        android:strokeWidth="1"
+        android:pathData="M30,40 L25,40" />
+    <path
+        android:fillColor="@color/kalma_text_primary"
+        android:strokeWidth="1"
+        android:pathData="M50,38 L55,38" />
+    <path
+        android:fillColor="@color/kalma_text_primary"
+        android:strokeWidth="1"
+        android:pathData="M50,40 L55,40" />
+
+    <!-- Tail -->
+    <path
+        android:fillColor="@color/kalma_primary"
+        android:pathData="M25,60 C20,65 15,70 10,75 C5,80 0,80 0,75 C0,70 5,65 10,60 C15,55 20,55 25,60 Z" />
+
+    <!-- Tail Stripes -->
+    <path
+        android:fillColor="@color/kalma_primary_dark"
+        android:pathData="M15,65 C12,67 9,67 9,65 C9,63 12,63 15,65 Z" />
+    <path
+        android:fillColor="@color/kalma_primary_dark"
+        android:pathData="M10,70 C7,72 4,72 4,70 C4,68 7,68 10,70 Z" />
+
+</vector>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kalma_background"
+    tools:context=".MainActivity">
+
+    <!-- ScrollView para contenido desplazable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- Logo Kalma -->
+            <TextView
+                android:id="@+id/logoKalma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalma"
+                android:textColor="@color/kalma_primary"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:letterSpacing="0.1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="32dp" />
+
+            <!-- Red Panda Mascot Container -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mascotCard"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_marginTop="32dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/kalma_pastel_blue"
+                app:layout_constraintTop_toBottomOf="@id/logoKalma"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <!-- Red Panda Face -->
+                    <ImageView
+                        android:id="@+id/redPandaFace"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/mascota_principal"
+                        android:scaleType="centerInside"
+                        android:contentDescription="Red Panda Mascot" />
+
+                    <!-- Mascot Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mascot_title"
+                        android:textColor="@color/kalma_text_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Welcome Message -->
+            <TextView
+                android:id="@+id/welcomeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_message"
+                android:textColor="@color/kalma_text_primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@id/mascotCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Welcome Subtitle -->
+            <TextView
+                android:id="@+id/welcomeSubtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_subtitle"
+                android:textColor="@color/kalma_text_secondary"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintTop_toBottomOf="@id/welcomeMessage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Mood Tracking Section -->
+            <TextView
+                android:id="@+id/moodTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/how_are_you_feeling"
+                android:textColor="@color/kalma_text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@id/welcomeSubtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Mood Buttons Container -->
+            <LinearLayout
+                android:id="@+id/moodContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/moodTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Happy Mood -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/moodHappy"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:text="😊"
+                    android:textSize="24sp"
+                    app:cornerRadius="16dp"
+                    app:strokeColor="@color/kalma_pastel_green"
+                    app:strokeWidth="2dp"
+                    app:backgroundTint="@color/kalma_pastel_green" />
+
+                <!-- Neutral Mood -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/moodNeutral"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:text="😐"
+                    android:textSize="24sp"
+                    app:cornerRadius="16dp"
+                    app:strokeColor="@color/kalma_pastel_yellow"
+                    app:strokeWidth="2dp"
+                    app:backgroundTint="@color/kalma_pastel_yellow" />
+
+                <!-- Sad Mood -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/moodSad"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:text="😢"
+                    android:textSize="24sp"
+                    app:cornerRadius="16dp"
+                    app:strokeColor="@color/kalma_pastel_blue"
+                    app:strokeWidth="2dp"
+                    app:backgroundTint="@color/kalma_pastel_blue" />
+
+            </LinearLayout>
+
+            <!-- Second Row of Mood Buttons -->
+            <LinearLayout
+                android:id="@+id/moodContainer2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/moodContainer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Anxious Mood -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/moodAnxious"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:text="😰"
+                    android:textSize="24sp"
+                    app:cornerRadius="16dp"
+                    app:strokeColor="@color/kalma_pastel_pink"
+                    app:strokeWidth="2dp"
+                    app:backgroundTint="@color/kalma_pastel_pink" />
+
+                <!-- Relaxed Mood -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/moodRelaxed"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:text="😌"
+                    android:textSize="24sp"
+                    app:cornerRadius="16dp"
+                    app:strokeColor="@color/kalma_secondary_light"
+                    app:strokeWidth="2dp"
+                    app:backgroundTint="@color/kalma_secondary_light" />
+
+                <!-- Empty space for symmetry -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:id="@+id/actionContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@id/moodContainer2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Breathing Exercise Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/breathingButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="@string/start_breathing"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"
+                    app:cornerRadius="28dp"
+                    app:backgroundTint="@color/kalma_primary"
+                    app:icon="@drawable/ic_breathing"
+                    app:iconGravity="textStart" />
+
+                <!-- Progress Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/progressButton"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="@string/view_progress"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="28dp"
+                    app:strokeColor="@color/kalma_primary"
+                    app:strokeWidth="2dp"
+                    app:icon="@drawable/ic_progress"
+                    app:iconGravity="textStart" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kalma_background_light"
+        app:itemIconTint="@color/kalma_primary"
+        app:itemTextColor="@color/kalma_primary"
+        app:menu="@menu/bottom_navigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

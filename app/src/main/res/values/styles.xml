@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Splash Screen Theme -->
+    <style name="Theme.KalmaNic.Splash" parent="Theme.KalmaNic">
+        <item name="android:windowBackground">@color/kalma_background</item>
+        <item name="android:statusBarColor">@color/kalma_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
