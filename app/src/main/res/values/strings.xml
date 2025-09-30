@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">Kalma-Nic</string>
+    <string name="app_name">Kalma</string>
+    
+    <!-- Main Screen -->
+    <string name="welcome_message">¡Bienvenido a Kalma!</string>
+    <string name="welcome_subtitle">Tu compañero para el bienestar emocional</string>
+    <string name="mascot_title">MASCOTA PRINCIPAL</string>
+    
+    <!-- Mood Tracking -->
+    <string name="how_are_you_feeling">¿Cómo te sientes hoy?</string>
+    <string name="mood_happy">Feliz</string>
+    <string name="mood_neutral">Neutral</string>
+    <string name="mood_sad">Triste</string>
+    <string name="mood_anxious">Ansioso</string>
+    <string name="mood_relaxed">Relajado</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_exercises">Ejercicios</string>
+    <string name="nav_progress">Progreso</string>
+    <string name="nav_community">Comunidad</string>
+    
+    <!-- Actions -->
+    <string name="start_breathing">Iniciar Respiración</string>
+    <string name="view_progress">Ver Progreso</string>
+    <string name="daily_check_in">Registro Diario</string>
+    
+    <!-- Messages -->
+    <string name="mood_registered">Estado de ánimo registrado: %s</string>
+    <string name="welcome_back">¡Bienvenido de vuelta!</string>
 </resources>

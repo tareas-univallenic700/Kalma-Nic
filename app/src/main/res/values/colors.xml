@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <!-- Kalma Brand Colors -->
+    <!-- Primary Colors -->
+    <color name="kalma_primary">#D46A3F</color>
+    <color name="kalma_primary_dark">#BF360C</color>
+    <color name="kalma_primary_light">#F57C00</color>
+    
+    <!-- Secondary Colors -->
+    <color name="kalma_secondary">#795548</color>
+    <color name="kalma_secondary_light">#FCE4CC</color>
+    
+    <!-- Accent Colors -->
+    <color name="kalma_accent_orange">#F57C00</color>
+    <color name="kalma_accent_terracotta">#D84315</color>
+    
+    <!-- Background Colors -->
+    <color name="kalma_background">#F8E7DD</color>
+    <color name="kalma_background_light">#FFFFFF</color>
+    <color name="kalma_background_dark">#2C3E50</color>
+    
+    <!-- Pastel Colors -->
+    <color name="kalma_pastel_green">#C8E6C9</color>
+    <color name="kalma_pastel_pink">#F8BBD0</color>
+    <color name="kalma_pastel_yellow">#FFF9C4</color>
+    <color name="kalma_pastel_blue">#BBDEFB</color>
+    
+    <!-- Text Colors -->
+    <color name="kalma_text_primary">#2C3E50</color>
+    <color name="kalma_text_secondary">#795548</color>
+    <color name="kalma_text_light">#FFFFFF</color>
+    
+    <!-- Standard Colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.KalmaNic" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Kalma Theme -->
+    <style name="Theme.KalmaNic" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/kalma_primary</item>
+        <item name="colorPrimaryVariant">@color/kalma_primary_dark</item>
+        <item name="colorOnPrimary">@color/kalma_text_light</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/kalma_secondary</item>
+        <item name="colorSecondaryVariant">@color/kalma_secondary_light</item>
+        <item name="colorOnSecondary">@color/kalma_text_light</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/kalma_background</item>
+        <item name="colorSurface">@color/kalma_background_light</item>
+        <item name="colorOnBackground">@color/kalma_text_primary</item>
+        <item name="colorOnSurface">@color/kalma_text_primary</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/kalma_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/kalma_background_light</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/kalma_text_primary</item>
+        <item name="android:textColorSecondary">@color/kalma_text_secondary</item>
+        
+        <!-- Accent color -->
+        <item name="colorAccent">@color/kalma_accent_orange</item>
+        
+        <!-- Material 3 specific colors -->
+        <item name="colorPrimaryContainer">@color/kalma_secondary_light</item>
+        <item name="colorOnPrimaryContainer">@color/kalma_text_primary</item>
+        <item name="colorSecondaryContainer">@color/kalma_pastel_blue</item>
+        <item name="colorOnSecondaryContainer">@color/kalma_text_primary</item>
+        <item name="colorTertiary">@color/kalma_accent_terracotta</item>
+        <item name="colorOnTertiary">@color/kalma_text_light</item>
+        <item name="colorTertiaryContainer">@color/kalma_pastel_pink</item>
+        <item name="colorOnTertiaryContainer">@color/kalma_text_primary</item>
+        <item name="colorError">@color/kalma_accent_terracotta</item>
+        <item name="colorOnError">@color/kalma_text_light</item>
+        <item name="colorErrorContainer">@color/kalma_pastel_pink</item>
+        <item name="colorOnErrorContainer">@color/kalma_text_primary</item>
+        <item name="colorOutline">@color/kalma_primary</item>
+        <item name="colorOutlineVariant">@color/kalma_secondary_light</item>
+        <item name="colorSurfaceVariant">@color/kalma_pastel_yellow</item>
+        <item name="colorOnSurfaceVariant">@color/kalma_text_secondary</item>
+    </style>
 </resources>
