@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">Kalma</string>
-    
+
     <!-- Main Screen -->
     <string name="welcome_message">¡Bienvenido a Kalma!</string>
+    <string name="welcome_message_user">¡Hola, %1$s! Gracias por volver.</string>
     <string name="welcome_subtitle">Tu compañero para el bienestar emocional</string>
     <string name="mascot_title">MASCOTA PRINCIPAL</string>
-    
+
     <!-- Mood Tracking -->
     <string name="how_are_you_feeling">¿Cómo te sientes hoy?</string>
     <string name="mood_happy">Feliz</string>
@@ -13,19 +14,92 @@
     <string name="mood_sad">Triste</string>
     <string name="mood_anxious">Ansioso</string>
     <string name="mood_relaxed">Relajado</string>
-    
+
     <!-- Navigation -->
     <string name="nav_home">Inicio</string>
     <string name="nav_exercises">Ejercicios</string>
     <string name="nav_progress">Progreso</string>
     <string name="nav_community">Comunidad</string>
-    
+
     <!-- Actions -->
-    <string name="start_breathing">Iniciar Respiración</string>
-    <string name="view_progress">Ver Progreso</string>
-    <string name="daily_check_in">Registro Diario</string>
-    
+    <string name="start_breathing">Iniciar respiración</string>
+    <string name="view_progress">Ver progreso</string>
+    <string name="daily_check_in">Registro diario</string>
+
     <!-- Messages -->
     <string name="mood_registered">Estado de ánimo registrado: %s</string>
+    <string name="mood_advice_title">Consejos para cuando te sientes %1$s</string>
+    <string name="mood_advice_happy">Comparte tu alegría con alguien cercano, anota qué hizo especial tu día y guarda ese momento para motivarte en semanas retadoras.</string>
+    <string name="mood_advice_neutral">Regálate una pausa consciente: respira profundo durante un minuto y escribe una pequeña meta agradable para darle color al resto del día.</string>
+    <string name="mood_advice_sad">Date permiso para sentir; habla con alguien de confianza y prueba una actividad cálida como escuchar tu canción favorita o salir a caminar suavemente.</string>
+    <string name="mood_advice_anxious">Inhala contando cuatro, exhala contando seis y enfócate en tres cosas que puedas ver, tocar y oír para regresar al presente con calma.</string>
+    <string name="mood_advice_relaxed">Aprovecha tu serenidad para estirar el cuerpo, agradecer tres cosas de hoy y planificar un pequeño detalle que mantenga esa paz mañana.</string>
     <string name="welcome_back">¡Bienvenido de vuelta!</string>
+
+    <!-- Informational content -->
+    <string name="info_section_title">Conoce la visión de Kalma</string>
+    <string name="info_card_hint">Explorando: %s</string>
+    <string name="overview_title">Resumen</string>
+    <string name="overview_body">El bienestar emocional y la salud mental son pilares para el desarrollo de la adolescencia. Kalma nace como una guía accesible que ayuda a los jóvenes a navegar la ansiedad, crear hábitos de autocuidado y fortalecer la regulación emocional diaria.</string>
+
+    <string name="objectives_title">Objetivos</string>
+    <string name="objective_general_title">Objetivo general</string>
+    <string name="objective_general_body">Atender las necesidades emocionales de los jóvenes con herramientas digitales interactivas que disminuyan la ansiedad, fomenten el autocuidado y mejoren la regulación emocional.</string>
+    <string name="objective_specific_title">Objetivos específicos</string>
+    <string name="objective_specific_item_1">&#8226; Proporcionar ejercicios de respiración, relajación y meditaciones guiadas.</string>
+    <string name="objective_specific_item_2">&#8226; Fomentar hábitos saludables con recordatorios, rutinas y contenidos educativos.</string>
+    <string name="objective_specific_item_3">&#8226; Ofrecer recursos para reconocer y registrar emociones con acompañamiento.</string>
+    <string name="objective_specific_item_4">&#8226; Mostrar la evolución emocional con registros y gráficos personales.</string>
+    <string name="objective_specific_item_5">&#8226; Mantener una interfaz clara, atractiva y motivadora para un uso constante.</string>
+
+    <string name="kalbot_title">KalBot, tu compañero</string>
+    <string name="kalbot_body">KalBot es un chatbot empático que saluda, registra emociones, recomienda recursos personalizados y mantiene al día tus avances con mensajes motivadores y accesos rápidos a las áreas clave de la app.</string>
+
+    <string name="features_title">Primera versión</string>
+    <string name="features_body">La primera versión de Kalma incluye bienvenida y registro sencillo, seguimiento del estado de ánimo con emojis y notas, recursos de respiración y autocuidado, notificaciones positivas y visualización semanal del progreso.</string>
+
+    <string name="anxiety_title">Panorama de la ansiedad en Nicaragua</string>
+    <string name="anxiety_body">Los trastornos de ansiedad representan el 13 % de la carga de salud mental en la niñez nicaragüense y llegan al 37 % en la juventud. Los diagnósticos reportados por el MINSA crecieron de 6,748 casos en 2017 a 24,742 en 2024, impulsados por crisis sociales, económicas y sanitarias recientes.</string>
+
+    <string name="regulation_title">Regulación emocional</string>
+    <string name="regulation_body">En Nicaragua se promueven estrategias de regulación como respiración profunda, reestructuración cognitiva, ejercicio físico y apoyo social. Estas prácticas fortalecen la autoconciencia emocional y reducen la ansiedad, aunque aún persiste el reto de masificar su aprendizaje.</string>
+
+    <string name="self_care_title">Autocuidado consciente</string>
+    <string name="self_care_body">Dormir bien, alimentarse de forma balanceada, mantenerse activo y expresar emociones son hábitos esenciales de autocuidado. También se recomienda evitar la automedicación y adoptar redes de apoyo familiar y comunitario para proteger la salud mental.</string>
+
+    <string name="mascot_title_card">Una mascota cercana</string>
+    <string name="mascot_body">La mascota panda rojo refuerza la conexión emocional con la app. Su diseño cálido inspira seguridad, ternura y empatía, invitando a los jóvenes a volver cada día para seguir su progreso y practicar hábitos saludables.</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">Inicia sesión para continuar tu viaje de autocuidado</string>
+    <string name="login_email_hint">Correo electrónico</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_button">Ingresar</string>
+    <string name="login_demo_accounts_title">Cuentas demo</string>
+    <string name="login_demo_accounts_subtitle">Puedes usar cualquiera de estos correos con la contraseña "Kalma123" para probar la app.</string>
+    <string name="login_error_email_required">Ingresa tu correo electrónico</string>
+    <string name="login_error_password_required">Ingresa tu contraseña</string>
+    <string name="login_error_unknown_email">Ese correo no está registrado en las cuentas demo</string>
+    <string name="login_error_invalid_password">Revisa la contraseña. Recuerda que es "Kalma123"</string>
+    <string name="login_success">¡Inicio de sesión exitoso!</string>
+
+    <!-- Sections -->
+    <string name="exercises_title">Rutinas guiadas</string>
+    <string name="exercises_subtitle">Explora actividades rápidas para regular tu respiración, liberar tensión y expresar tus emociones.</string>
+    <string name="exercises_breathing_title">Respiración 4-6</string>
+    <string name="exercises_breathing_body">Inhala por cuatro segundos, sostén dos y exhala por seis. Repite cinco veces para reducir la ansiedad y estabilizar el ritmo cardiaco.</string>
+    <string name="exercises_journal_title">Diario Kalma</string>
+    <string name="exercises_journal_body">Registra cómo te sientes con tres palabras y una nota breve. Reconocer tus emociones cada día fortalece la autoconciencia.</string>
+
+    <string name="progress_title">Tu progreso</string>
+    <string name="progress_subtitle">Observa cómo evoluciona tu bienestar semana a semana y mantén hábitos constantes.</string>
+    <string name="progress_weekly_focus">Resumen semanal</string>
+    <string name="progress_weekly_body">Esta semana registraste emociones 5 de 7 días y completaste dos ejercicios de respiración. ¡Excelente constancia!</string>
+
+    <string name="community_title">Comunidad Kalma</string>
+    <string name="community_subtitle">Recibe apoyo y comparte experiencias con quienes también cuidan su salud mental.</string>
+    <string name="community_support_title">Red de apoyo</string>
+    <string name="community_support_body">Comparte tus logros y retos con tus amistades, familiares o consejeros escolares para que te acompañen en el proceso.</string>
+    <string name="community_resources_title">Recursos recomendados</string>
+    <string name="community_resources_body">Visita las guías de autocuidado del MINSA y las cápsulas de mindfulness de OPS para profundizar en hábitos saludables.</string>
 </resources>
