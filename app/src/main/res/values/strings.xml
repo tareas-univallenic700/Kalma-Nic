@@ -3,6 +3,7 @@
 
     <!-- Main Screen -->
     <string name="welcome_message">¡Bienvenido a Kalma!</string>
+    <string name="welcome_message_user">¡Hola, %1$s! Gracias por volver.</string>
     <string name="welcome_subtitle">Tu compañero para el bienestar emocional</string>
     <string name="mascot_title">MASCOTA PRINCIPAL</string>
 
@@ -27,6 +28,12 @@
 
     <!-- Messages -->
     <string name="mood_registered">Estado de ánimo registrado: %s</string>
+    <string name="mood_advice_title">Consejos para cuando te sientes %1$s</string>
+    <string name="mood_advice_happy">Comparte tu alegría con alguien cercano, anota qué hizo especial tu día y guarda ese momento para motivarte en semanas retadoras.</string>
+    <string name="mood_advice_neutral">Regálate una pausa consciente: respira profundo durante un minuto y escribe una pequeña meta agradable para darle color al resto del día.</string>
+    <string name="mood_advice_sad">Date permiso para sentir; habla con alguien de confianza y prueba una actividad cálida como escuchar tu canción favorita o salir a caminar suavemente.</string>
+    <string name="mood_advice_anxious">Inhala contando cuatro, exhala contando seis y enfócate en tres cosas que puedas ver, tocar y oír para regresar al presente con calma.</string>
+    <string name="mood_advice_relaxed">Aprovecha tu serenidad para estirar el cuerpo, agradecer tres cosas de hoy y planificar un pequeño detalle que mantenga esa paz mañana.</string>
     <string name="welcome_back">¡Bienvenido de vuelta!</string>
 
     <!-- Informational content -->
@@ -62,4 +69,37 @@
 
     <string name="mascot_title_card">Una mascota cercana</string>
     <string name="mascot_body">La mascota panda rojo refuerza la conexión emocional con la app. Su diseño cálido inspira seguridad, ternura y empatía, invitando a los jóvenes a volver cada día para seguir su progreso y practicar hábitos saludables.</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">Inicia sesión para continuar tu viaje de autocuidado</string>
+    <string name="login_email_hint">Correo electrónico</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_button">Ingresar</string>
+    <string name="login_demo_accounts_title">Cuentas demo</string>
+    <string name="login_demo_accounts_subtitle">Puedes usar cualquiera de estos correos con la contraseña "Kalma123" para probar la app.</string>
+    <string name="login_error_email_required">Ingresa tu correo electrónico</string>
+    <string name="login_error_password_required">Ingresa tu contraseña</string>
+    <string name="login_error_unknown_email">Ese correo no está registrado en las cuentas demo</string>
+    <string name="login_error_invalid_password">Revisa la contraseña. Recuerda que es "Kalma123"</string>
+    <string name="login_success">¡Inicio de sesión exitoso!</string>
+
+    <!-- Sections -->
+    <string name="exercises_title">Rutinas guiadas</string>
+    <string name="exercises_subtitle">Explora actividades rápidas para regular tu respiración, liberar tensión y expresar tus emociones.</string>
+    <string name="exercises_breathing_title">Respiración 4-6</string>
+    <string name="exercises_breathing_body">Inhala por cuatro segundos, sostén dos y exhala por seis. Repite cinco veces para reducir la ansiedad y estabilizar el ritmo cardiaco.</string>
+    <string name="exercises_journal_title">Diario Kalma</string>
+    <string name="exercises_journal_body">Registra cómo te sientes con tres palabras y una nota breve. Reconocer tus emociones cada día fortalece la autoconciencia.</string>
+
+    <string name="progress_title">Tu progreso</string>
+    <string name="progress_subtitle">Observa cómo evoluciona tu bienestar semana a semana y mantén hábitos constantes.</string>
+    <string name="progress_weekly_focus">Resumen semanal</string>
+    <string name="progress_weekly_body">Esta semana registraste emociones 5 de 7 días y completaste dos ejercicios de respiración. ¡Excelente constancia!</string>
+
+    <string name="community_title">Comunidad Kalma</string>
+    <string name="community_subtitle">Recibe apoyo y comparte experiencias con quienes también cuidan su salud mental.</string>
+    <string name="community_support_title">Red de apoyo</string>
+    <string name="community_support_body">Comparte tus logros y retos con tus amistades, familiares o consejeros escolares para que te acompañen en el proceso.</string>
+    <string name="community_resources_title">Recursos recomendados</string>
+    <string name="community_resources_body">Visita las guías de autocuidado del MINSA y las cápsulas de mindfulness de OPS para profundizar en hábitos saludables.</string>
 </resources>

@@ -14,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
 
         // Delay for splash screen
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }, 2000) // 2 seconds delay
     }

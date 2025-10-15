@@ -35,6 +35,7 @@ Kalma es una aplicación móvil diseñada para el bienestar emocional, con un en
 app/
 ├── src/main/
 │   ├── java/com/example/kalma_nic/
+│   │   ├── LoginActivity.kt         # Pantalla de acceso con cuentas demo
 │   │   ├── MainActivity.kt          # Actividad principal
 │   │   └── SplashActivity.kt        # Pantalla de bienvenida
 │   ├── res/
@@ -71,9 +72,14 @@ app/
 4. Ejecuta la aplicación en un dispositivo o emulador
 
 ### Acceso y cuentas
-- La versión actual **no implementa autenticación ni pantallas de inicio de sesión**.
-- Puedes explorar todas las pantallas directamente; el modo invitado descrito en el concepto aún no está programado.
-- No existen credenciales de demostración necesarias para iniciar la app.
+- **Pantalla de login:** tras la animación inicial se presenta un formulario para ingresar con cuentas de demostración.
+- **Credenciales demo disponibles:**
+  - abril.jimenez@kalma.app / Kalma123
+  - carlos.martinez@kalma.app / Kalma123
+  - estefany.rojas@kalma.app / Kalma123
+  - leonardo.perez@kalma.app / Kalma123
+  - marcela.garcia@kalma.app / Kalma123
+- Tras iniciar sesión, el nombre del usuario se muestra en la pantalla principal y se habilitan las secciones del menú inferior.
 
 ## Pruebas y verificación
 - `./gradlew lint`: Ejecuta las comprobaciones de lint de Android. Requiere que el SDK de Android esté instalado y configurado en la variable de entorno `ANDROID_HOME` o en `local.properties` como `sdk.dir`. Si no está presente, la tarea fallará antes de analizar el código.

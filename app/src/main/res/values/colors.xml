@@ -29,6 +29,7 @@
     <color name="kalma_background">#FBEFE3</color>
     <color name="kalma_background_light">#FFFFFF</color>
     <color name="kalma_background_elevated">#F9E1CE</color>
+    <color name="kalma_surface">#FFFFFFFF</color>
 
     <!-- Colores de texto -->
     <color name="kalma_text_primary">#2F1A10</color>
