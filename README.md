@@ -76,6 +76,27 @@ app/
 
 > En entornos de CI o contenedores sin acceso al SDK, es normal que `gradle lint` o `assembleDebug` fallen. Esto no indica un problema con el código fuente, sino una falta de dependencias del sistema.
 
+### Instalación rápida del SDK de Android (Linux)
+Si necesitas preparar el entorno manualmente, estos pasos instalan las herramientas de línea de comandos en `~/android-sdk` y configuran las variables requeridas:
+
+```bash
+mkdir -p ~/android-sdk/cmdline-tools
+cd ~/android-sdk
+curl -L -o commandlinetools.zip https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+unzip commandlinetools.zip -d cmdline-tools
+mv cmdline-tools/cmdline-tools cmdline-tools/latest
+export ANDROID_SDK_ROOT="$PWD"
+yes | ~/android-sdk/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
+```
+
+Después de la instalación, crea (o actualiza) `local.properties` con la ruta del SDK:
+
+```properties
+sdk.dir=/home/tu_usuario/android-sdk
+```
+
+En contenedores sin acceso a internet (como el utilizado en estas pruebas) la descarga del SDK puede responder con `HTTP/1.1 403 Forbidden`. En ese caso no es posible completar la instalación dentro del entorno aislado y se recomienda ejecutar los comandos anteriores en una máquina local con conexión.
+
 ## Próximas Funcionalidades
 - [ ] Ejercicios de respiración interactivos
 - [ ] Gráficos de progreso del estado de ánimo
