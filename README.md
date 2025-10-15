@@ -70,6 +70,12 @@ app/
 3. Sincroniza las dependencias de Gradle
 4. Ejecuta la aplicación en un dispositivo o emulador
 
+## Pruebas y verificación
+- `./gradlew lint`: Ejecuta las comprobaciones de lint de Android. Requiere que el SDK de Android esté instalado y configurado en la variable de entorno `ANDROID_HOME` o en `local.properties` como `sdk.dir`. Si no está presente, la tarea fallará antes de analizar el código.
+- `./gradlew assembleDebug`: Genera un APK ejecutable. Al igual que la tarea de lint, depende de tener un SDK válido y un emulador o dispositivo configurado.
+
+> En entornos de CI o contenedores sin acceso al SDK, es normal que `gradle lint` o `assembleDebug` fallen. Esto no indica un problema con el código fuente, sino una falta de dependencias del sistema.
+
 ## Próximas Funcionalidades
 - [ ] Ejercicios de respiración interactivos
 - [ ] Gráficos de progreso del estado de ánimo
