@@ -46,11 +46,23 @@ app/
 ```
 
 ## Paleta de Colores
-- **Primario**: #D46A3F (Terracota cálido)
-- **Secundario**: #795548 (Marrón terroso)
-- **Acentos**: #F57C00 (Naranja vibrante)
-- **Fondo**: #F8E7DD (Beige suave)
-- **Pasteles**: Verde, rosa, amarillo y azul suaves
+- **Primario**: #E46727 (Naranja energizante inspirado en el panda rojo)
+- **Primario claro**: #F9D7B4 (Durazno suave para superficies elevadas)
+- **Secundario**: #794023 (Marrón cálido y acogedor)
+- **Secundario claro**: #F6E2CF (Beige cremoso para tarjetas y fondos)
+- **Acentos**: Verdes, rosas, amarillos y azules pastel que transmiten calma
+
+## Contexto y objetivos
+- **Bienestar juvenil**: Kalma se enfoca en adolescentes que necesitan apoyo accesible para gestionar ansiedad y autocuidado.
+- **Objetivo general**: Ofrecer herramientas digitales que reduzcan la ansiedad, fortalezcan la autorregulación emocional y motiven hábitos saludables.
+- **Objetivos específicos**:
+  - Ejercicios guiados de respiración, relajación y mindfulness.
+  - Rutinas personalizadas con recordatorios positivos diarios.
+  - Registro y análisis de emociones mediante emojis y notas.
+  - Gráficos y registros para visualizar la evolución emocional.
+  - Interfaz clara, amigable y atractiva que motive el uso constante.
+- **KalBot**: Chatbot empático que recibe al usuario, registra su estado de ánimo, sugiere recursos y refuerza la constancia con mensajes motivacionales.
+- **Panorama nacional**: En Nicaragua, los diagnósticos de ansiedad reportados por el MINSA crecieron de 6,748 casos (2017) a 24,742 casos (2024), lo que refuerza la necesidad de recursos como Kalma.
 
 ## Instalación y Uso
 1. Clona el repositorio

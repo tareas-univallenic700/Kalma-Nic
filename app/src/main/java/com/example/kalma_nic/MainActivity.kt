@@ -1,14 +1,12 @@
 package com.example.kalma_nic
 
 import android.animation.ObjectAnimator
-import android.animation.ValueAnimator
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.BounceInterpolator
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.animation.doOnEnd
 import com.example.kalma_nic.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         setupMoodButtons()
         setupActionButtons()
         setupBottomNavigation()
+        setupInfoCards()
     }
 
     /**
@@ -66,6 +65,55 @@ class MainActivity : AppCompatActivity() {
         waveAnimation.interpolator = AccelerateDecelerateInterpolator()
         waveAnimation.startDelay = 1500
         waveAnimation.start()
+    }
+
+    /**
+     * Presenta progresivamente el contenido informativo
+     */
+    private fun setupInfoCards() {
+        binding.infoSectionTitle.alpha = 0f
+        binding.infoSectionTitle.translationY = 50f
+        binding.infoSectionTitle.animate()
+            .alpha(1f)
+            .translationY(0f)
+            .setStartDelay(800)
+            .setDuration(500)
+            .setInterpolator(AccelerateDecelerateInterpolator())
+            .start()
+
+        val cardPairs = listOf(
+            binding.infoOverviewCard to getString(R.string.overview_title),
+            binding.infoObjectivesCard to getString(R.string.objectives_title),
+            binding.infoKalbotCard to getString(R.string.kalbot_title),
+            binding.infoAnxietyCard to getString(R.string.anxiety_title),
+            binding.infoRegulationCard to getString(R.string.regulation_title),
+            binding.infoSelfCareCard to getString(R.string.self_care_title)
+        )
+
+        cardPairs.forEachIndexed { index, (card, title) ->
+            card.alpha = 0f
+            card.translationY = 80f
+            card.animate()
+                .alpha(1f)
+                .translationY(0f)
+                .setStartDelay(950L + index * 140L)
+                .setDuration(500)
+                .setInterpolator(AccelerateDecelerateInterpolator())
+                .start()
+
+            card.setOnClickListener {
+                val pulseX = ObjectAnimator.ofFloat(card, "scaleX", 1f, 1.03f, 1f)
+                pulseX.duration = 350
+
+                val pulseY = ObjectAnimator.ofFloat(card, "scaleY", 1f, 1.03f, 1f)
+                pulseY.duration = 350
+
+                pulseX.start()
+                pulseY.start()
+
+                Toast.makeText(this, getString(R.string.info_card_hint, title), Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     /**

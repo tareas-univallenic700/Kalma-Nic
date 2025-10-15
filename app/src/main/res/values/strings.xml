@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Kalma</string>
-    
+
     <!-- Main Screen -->
     <string name="welcome_message">¡Bienvenido a Kalma!</string>
     <string name="welcome_subtitle">Tu compañero para el bienestar emocional</string>
     <string name="mascot_title">MASCOTA PRINCIPAL</string>
-    
+
     <!-- Mood Tracking -->
     <string name="how_are_you_feeling">¿Cómo te sientes hoy?</string>
     <string name="mood_happy">Feliz</string>
@@ -13,19 +13,53 @@
     <string name="mood_sad">Triste</string>
     <string name="mood_anxious">Ansioso</string>
     <string name="mood_relaxed">Relajado</string>
-    
+
     <!-- Navigation -->
     <string name="nav_home">Inicio</string>
     <string name="nav_exercises">Ejercicios</string>
     <string name="nav_progress">Progreso</string>
     <string name="nav_community">Comunidad</string>
-    
+
     <!-- Actions -->
-    <string name="start_breathing">Iniciar Respiración</string>
-    <string name="view_progress">Ver Progreso</string>
-    <string name="daily_check_in">Registro Diario</string>
-    
+    <string name="start_breathing">Iniciar respiración</string>
+    <string name="view_progress">Ver progreso</string>
+    <string name="daily_check_in">Registro diario</string>
+
     <!-- Messages -->
     <string name="mood_registered">Estado de ánimo registrado: %s</string>
     <string name="welcome_back">¡Bienvenido de vuelta!</string>
+
+    <!-- Informational content -->
+    <string name="info_section_title">Conoce la visión de Kalma</string>
+    <string name="info_card_hint">Explorando: %s</string>
+    <string name="overview_title">Resumen</string>
+    <string name="overview_body">El bienestar emocional y la salud mental son pilares para el desarrollo de la adolescencia. Kalma nace como una guía accesible que ayuda a los jóvenes a navegar la ansiedad, crear hábitos de autocuidado y fortalecer la regulación emocional diaria.</string>
+
+    <string name="objectives_title">Objetivos</string>
+    <string name="objective_general_title">Objetivo general</string>
+    <string name="objective_general_body">Atender las necesidades emocionales de los jóvenes con herramientas digitales interactivas que disminuyan la ansiedad, fomenten el autocuidado y mejoren la regulación emocional.</string>
+    <string name="objective_specific_title">Objetivos específicos</string>
+    <string name="objective_specific_item_1">&#8226; Proporcionar ejercicios de respiración, relajación y meditaciones guiadas.</string>
+    <string name="objective_specific_item_2">&#8226; Fomentar hábitos saludables con recordatorios, rutinas y contenidos educativos.</string>
+    <string name="objective_specific_item_3">&#8226; Ofrecer recursos para reconocer y registrar emociones con acompañamiento.</string>
+    <string name="objective_specific_item_4">&#8226; Mostrar la evolución emocional con registros y gráficos personales.</string>
+    <string name="objective_specific_item_5">&#8226; Mantener una interfaz clara, atractiva y motivadora para un uso constante.</string>
+
+    <string name="kalbot_title">KalBot, tu compañero</string>
+    <string name="kalbot_body">KalBot es un chatbot empático que saluda, registra emociones, recomienda recursos personalizados y mantiene al día tus avances con mensajes motivadores y accesos rápidos a las áreas clave de la app.</string>
+
+    <string name="features_title">Primera versión</string>
+    <string name="features_body">La primera versión de Kalma incluye bienvenida y registro sencillo, seguimiento del estado de ánimo con emojis y notas, recursos de respiración y autocuidado, notificaciones positivas y visualización semanal del progreso.</string>
+
+    <string name="anxiety_title">Panorama de la ansiedad en Nicaragua</string>
+    <string name="anxiety_body">Los trastornos de ansiedad representan el 13 % de la carga de salud mental en la niñez nicaragüense y llegan al 37 % en la juventud. Los diagnósticos reportados por el MINSA crecieron de 6,748 casos en 2017 a 24,742 en 2024, impulsados por crisis sociales, económicas y sanitarias recientes.</string>
+
+    <string name="regulation_title">Regulación emocional</string>
+    <string name="regulation_body">En Nicaragua se promueven estrategias de regulación como respiración profunda, reestructuración cognitiva, ejercicio físico y apoyo social. Estas prácticas fortalecen la autoconciencia emocional y reducen la ansiedad, aunque aún persiste el reto de masificar su aprendizaje.</string>
+
+    <string name="self_care_title">Autocuidado consciente</string>
+    <string name="self_care_body">Dormir bien, alimentarse de forma balanceada, mantenerse activo y expresar emociones son hábitos esenciales de autocuidado. También se recomienda evitar la automedicación y adoptar redes de apoyo familiar y comunitario para proteger la salud mental.</string>
+
+    <string name="mascot_title_card">Una mascota cercana</string>
+    <string name="mascot_body">La mascota panda rojo refuerza la conexión emocional con la app. Su diseño cálido inspira seguridad, ternura y empatía, invitando a los jóvenes a volver cada día para seguir su progreso y practicar hábitos saludables.</string>
 </resources>
