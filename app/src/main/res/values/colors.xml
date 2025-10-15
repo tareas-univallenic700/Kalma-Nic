@@ -21,6 +21,10 @@
     <color name="kalma_pastel_yellow">#FBE8A6</color>
     <color name="kalma_pastel_blue">#D6E9F9</color>
 
+    <!-- Tonos de acento utilizados por el tema -->
+    <color name="kalma_accent_orange">#F5A26A</color>
+    <color name="kalma_accent_terracotta">#C55A3C</color>
+
     <!-- Fondos y superficies -->
     <color name="kalma_background">#FBEFE3</color>
     <color name="kalma_background_light">#FFFFFF</color>
